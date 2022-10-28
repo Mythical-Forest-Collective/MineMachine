@@ -1,5 +1,7 @@
 plugins {
 	id 'maven-publish'
+	id 'com.github.johnrengelman.shadow' version '7.1.2'
+	id 'java'
 	alias libs.plugins.quilt.loom
 }
 
@@ -33,6 +35,9 @@ dependencies {
 	// Quilted Fabric API will automatically pull in the correct QSL version.
 	modImplementation libs.quilted.fabric.api
 	// modImplementation libs.bundles.quilted.fabric.api // If you wish to use Fabric API's deprecated modules, you can replace the above line with this one
+
+	// Add our own dependencies here
+	implementation "io.github.kawamuray.wasmtime:wasmtime-java:0.13.0"
 }
 
 processResources {

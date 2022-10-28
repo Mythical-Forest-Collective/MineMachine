@@ -1,25 +1,25 @@
 {
 	"schema_version": 1,
 	"quilt_loader": {
-		"group": "com.example",
-		"id": "example_mod",
+		"group": "systems.plurality.foc.minemachine",
+		"id": "minemachine",
 		"version": "${version}",
 		"metadata": {
-			"name": "Mod Name",
-			"description": "A short description of your mod.",
+			"name": "MineMachine",
+			"description": "MineMachine is our crappy attempt at a WASM-based ComputerCraft alternative!",
 			"contributors": {
-				"Your name here": "Owner"
+				"Mythical Forest Collective": "Owner"
 			},
 			"contact": {
-				"homepage": "https://example.com/",
-				"issues": "https://github.com/QuiltMC/quilt-template-mod/issues",
-				"sources": "https://github.com/QuiltMC/quilt-template-mod"
+				"homepage": "https://github.com/Mythical-Forest-Collective/MineMachine",
+				"issues": "https://github.com/Mythical-Forest-Collective/MineMachine/issues",
+				"sources": "https://github.com/Mythical-Forest-Collective/MineMachine"
 			},
-			"icon": "assets/example_mod/icon.png"
+			"icon": "assets/minemachine/icon.png"
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"init": "com.example.example_mod.ExampleMod"
+			"init": "systems.plurality.foc.minemachine.MineMachine"
 		},
 		"depends": [
 			{
@@ -36,5 +36,5 @@
 			}
 		]
 	},
-	"mixin": "example_mod.mixins.json"
+	"mixin": "minemachine.mixins.json"
 }
